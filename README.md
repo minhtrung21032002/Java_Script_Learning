@@ -46,6 +46,29 @@ Ex:
    }
    logger('hi')
    Ex: const sum = (a,b) => a+b
-   console.log(sum(2,2)) 
+   console.log(sum(2,2))
+
+7) # Export
+   Default keyword as default object to export when importing that file
+   export { default } is the keyword of re-default export
+   Note: export{default} is used widely to serve as a default file in the folder
+   Ex:
+      // moduleA.js
+    const someFunction = () => {
+      // ...
+    };
+    
+    export default someFunction;
+
+   // moduleB.js
+    export { default } from './moduleA.js';
+
+    // In another JavaScript file
+    import someFunction from './moduleB.js';
+
+    // Now, someFunction contains the default export from moduleA.js
+
+
+
          
    
