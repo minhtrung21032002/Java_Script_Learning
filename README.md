@@ -67,6 +67,19 @@ Ex:
     import someFunction from './moduleB.js';
 
     // Now, someFunction contains the default export from moduleA.js
+8) Notes
+
+  Call back( function as parameter ), pass function as parameter without ()
+
+Object constructor 
+
+type of functions
+
+Promise 
+
+Array method 
+
+Remember that everything in javascript is object, if a var = function => it is a function => adding () to call it
 
 
 
