@@ -82,6 +82,10 @@ Array method
 Remember that everything in javascript is object, if a var = function => it is a function => adding () to call it
 
 
+9) Jquerry and DOM
+    Remember to add the DOMContentLoaded in order to use jQuerry properly
+
+
 
          
    
