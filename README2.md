@@ -79,3 +79,16 @@ Frontend Workflow:
     Client-Side Rendering: With CSR, the actual rendering of the data and updating the DOM (Document Object Model) is done on the client-side using JavaScript. This allows for dynamic and interactive user interfaces.
 
     User Interaction: Users can interact with the page, triggering further requests to the backend as needed. These interactions may include creating, updating, or deleting data, all of which involve making appropriate API requests.
+    
+ Soft delete
+
+Jquerry is helpful when we want to add event listern to all el
+
+ement retrive from DOM
+
+
+Refactor code
+
+query parameter
+
+middleware
