@@ -1,0 +1,169 @@
+:root{ /*This part is used for declaring the main colors we want to use in our website (i.e varible declaration) */
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: #f53e2d;
+    --navbar-height: 41px;
+    --header-height: 120px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+}
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+
+    font-size: 62.5%;
+    /* 16px is 100%, % is based on the father tag and 62.5% is a trick to make rem unit easier to set*/
+    line-height: 1.6rem;
+    /* 16px */
+    box-sizing: border-box;
+}
+/* Responsive */
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width{
+    width: 100%
+}
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+/* Test */
+.grid__column-2{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+.grid__column-2-4{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+.grid__column-10{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3334%;
+}
+
+.btn{
+    min-width: 142px;
+    min-height: 36px;
+    border: none;
+    font-size: 1.4rem;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6rem;
+}
+
+.select-input:hover .select-input_list{
+    display: block;
+}
+.select-input{
+    position: relative;
+    min-height: 36px;
+    padding: 0 12px;
+    min-width: 200px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.select-input_list{
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    right: 0px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    list-style: none;
+    padding-left: 12px;
+    display: none;
+}
+.select-input_link{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--black-color);
+}
+.select-input_link:hover{
+    color: var(--primary-color);
+}
+.select-input-icon{
+    font-size: 1.4rem;
+    position: relative;
+}
+
+
+.btn.btn--primary{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes grow{
+    from{
+        transform: scale(var(--growth-from));
+    }
+    to{
+        opacity: scale(var(--growth-to));
+    }
+}
+
+.btn-main {
+    border: none;
+    background-color: var(--white-color);
+    height: 32px;
+    width: 10%;
+    position: relative;
+    right: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.pages{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+.pages_item{
+    margin: 0 10px;
+}
+.pages_item__link{
+    display: block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: black;
+    min-width: 40px;
+    min-height: 30px;
+    line-height: 30px;
+    text-align: center;
+    
+}
+.pages_item__icon{
+
+}
+.pages_item--active.pages_item{
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 2px;
+
+}
